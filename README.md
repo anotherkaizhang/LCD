@@ -30,12 +30,13 @@ On top of the basic framework above, we will develop and implement a new GPU-acc
 
 In spite of GPU’s speedup, some biomedical researchers’ personal computers may still prefer CPU to the GPU. In order for large-scale causal discovery on such traditional architecture, we  develop and implement “divide-and-conquer” schemes for causal discovery for improved computational and statistical efficiency. Even if the whole variable set is causally sufficient, they suffer the potential issue that the divided groups may have hidden direct common causes, which may result in wrong edges in the result. We proved that once each divided variable set contains a variable Vj and its Markov blanket, then any estimated causal relation that involves the given variable Vj is correct. Fortunately, it is relatively easy to estimate Markov blankets, thanks to the progress in variable selection and graphical model estimation in statistics and computer science. This scheme also allows parallelization on GPUs.
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+<center><img alt = "" src='https://github.com/kzhang14/LCD/blob/master/resources/image1.png'></center>
+
 Figure 1. The proposed evolvement from Tetrad to LCD with consideration of scalability and compatibility with state-of-the-art acceleration and visualization tools
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
-Figure 2. Preliminary results of GPU-accelerated causal discovery method. The speedup on a 100 node graph is 400x, and such gain is bigger with larger graphs and more samples.
+<center><img alt = "" src='https://github.com/kzhang14/LCD/blob/master/resources/image2.png'></center>
 
+Figure 2. Preliminary results of GPU-accelerated causal discovery method. The speedup on a 100 node graph is 400x, and such gain is bigger with larger graphs and more samples.
 
 
 ## References
